@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="Viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/content.css">
+  <style>
+    .header-container{
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <ul class="header">
+      <li class="header-logo"></li>
+      <li class="header-group header-title">YEOJOON</li>
+      <li class="header-group header-work">WORK</li>
+      <li class="header-group header-about">ABOUT</li>
+      <li class="header-group header-contact">CONTACT</li>
+    </ul>    
+  </div>
+  <div class="content-container">
+    <div class="icon-group">
+      <img class="icon" src="img/ic_linkedin.png">
+      <img class="icon" src="img/ic_instagram.png">
+    </div>
+    <div class="content-group">
+      <div class="content">
+        <div class="content-info">
+          <div class="content-subtitle">UI / UX Design<br>Interaction Design</div>
+          <div class="content-date">2019</div>
+        </div>
+        <div class="content-title">Brand Identity for The Hungarian Fashion and Design</div>
+      </div>
+      <div class="content not-anim"><div class="content-img"><img src="img/Concept1_Perspective.jpg"></div></div>
+      <div class="content">
+        <div class="content-info">
+          <div class="content-subtitle">Goals and Tasks</div>
+        </div>
+        <div class="content-paragraph">We designed the website for Lemon Digital who create high quality animation videos for ICO and Blockchain projects, which took them to the next greater stage in business sphere and expanded their sphere of influence in digital world.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="revealer">
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/header.js"></script>
+  <script type="text/javascript">
+
+    function listAnimation(){
+      $('.content').each(function (i) {
+        var $workList = $(this);
+        setTimeout(function(){
+          $workList.css('opacity', '1');
+          $workList.css('transform', 'translate3d(0, 0, 0');
+          $workList.css('transition', 'all .6s ease');
+          $('.content-img').addClass('content-img-anim');
+        }, i*300);
+      });
+    }
+
+    $(document).ready(listAnimation);
+
+
+  </script>
+</body>
+</html>
