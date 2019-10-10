@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="Viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/content_01.css">
+  <style>
+    .header-container{
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <ul class="header">
+      <li class="header-logo"></li>
+      <li class="header-group header-title">YEOJOON</li>
+      <li class="header-group header-work">WORK</li>
+      <li class="header-group header-about">ABOUT</li>
+      <li class="header-group header-contact">CONTACT</li>
+    </ul>    
+  </div>
+  <div class="content-container">
+    <div class="icon-group">
+      <img class="icon" src="img/ic_linkedin.png">
+      <img class="icon" src="img/ic_instagram.png">
+    </div>
+    <div class="content-group">
+      <div class="content">
+        <div class="content-info">
+          <div class="content-subtitle">UI / UX Design<br>Interaction Design</div>
+          <div class="content-date">2019</div>
+        </div>
+        <h1 class="content-title">kakao i Service : Visual Components Design and Guide</h1>
+      </div>
+      <div class="content not-anim"><div class="content-img"><img src="img/Concept1_Perspective.jpg"></div></div>
+      <div class="content">
+        <ul class="content-info-index">
+          <li class="content-info-index-selected">Voice Agent</li>
+          <li class="">View Templete</li>
+          <li class="">Templete Layout</li>
+          <li class="">Interaction</li>
+        </ul>
+        <div class="content-items">
+          <div class="content-item">
+            <h2>Voice Agent</h2>
+            <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so that necessary information can be seen at a glance.</span>
+            <div class="divider"></div>
+          </div>
+          <div class="content-item">
+            <h3>Line Dot</h3>
+            <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so that necessary information can be seen at a glance.</span>
+            <div class= "img-container line"><div class="lottie lottie-agent-line"></div></div>
+            <h3>Yellow Ring</h3>
+            <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so that necessary information can be seen at a glance.</span>
+            <div class= "img-container dot"><div class="lottie lottie-agent-dot"></div></div>
+            <div class="divider"></div>
+          </div>
+          <div class="content-item">
+            <h3>Status</h3>
+            <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so that necessary information can be seen at a glance.</span>
+            <ul class="content-img-4column">
+              <li class="content-4img"><div class="lottie lottie-agent-line"></div><span>Listening</span></li>
+              <li class="content-4img img-second"><div class="lottie lottie-agent-line"></div><span>Processing</span></li>
+              <li class="content-4img img-third"><div class="lottie lottie-agent-line"></div><span>Answering</span></li>
+            </ul>
+            <ul class="content-img-4column">
+              <li class="content-4img"><div class="lottie lottie-agent-dot"></div><span>Listening</span></li>
+              <li class="content-4img img-second"><div class="lottie lottie-agent-dot"></div><span>Processing</span></li>
+              <li class="content-4img img-third"><div class="lottie lottie-agent-dot"></div><span>Answering</span></li>
+            </ul>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="revealer">
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.easeScroll.js"></script>
+  <script src="js/lottie.js"></script>
+  <script type="text/javascript">
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 20,
+      accelerationMax: 1,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true
+    });
+
+    function listAnimation(){
+      $('.content').each(function (i) {
+        var $workList = $(this);
+        setTimeout(function(){
+          $workList.css('opacity', '1');
+          $workList.css('transform', 'translate3d(0, 0, 0');
+          $workList.css('transition', 'all 1s ease');
+          $('.content-img').addClass('content-img-anim');
+        }, i*300);
+      });
+    }
+
+    $(document).ready(listAnimation);
+
+    $(document).ready( function() {
+      var lottieWidth = $( '.content-4img' ).width();
+      $('.content-4img .lottie').css('height', lottieWidth);
+    });
+
+    const agentDot = bodymovin.loadAnimation({
+      container: $('.lottie-agent-dot'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'agent_dot_data.json'
+    });
+
+    agentDot.play();
+
+    const agentLine = bodymovin.loadAnimation({
+      container: $('.lottie-agent-line'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'agent_line_data.json'
+    });
+
+    agentLine.play();
+
+  </script>
+  <script src="js/info.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>

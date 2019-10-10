@@ -7,18 +7,17 @@ var $carousel = $('.main-carousel').flickity({
   wrapAround: true,
   hash: true,
   autoPlay: 5000,
-  selectedAttraction: 0.01,
   pauseAutoPlayOnHover: false      
 });
 
 var flkty = $carousel.data('flickity');
 var $imgs = $('.carousel-cell img');
 
-
 // update Index
 function updateIndex(event, index){
   var cellNumber = flkty.selectedIndex + 1;
-  $('.main-project-index').text( cellNumber + ' / ' + flkty.slides.length );
+  $('.main-project-index').text( '0' + cellNumber );
+  //$('.main-project-index').text( '0' + flkty.slides.length );
 }
 updateIndex();
 
@@ -35,7 +34,6 @@ function updateSlide(event, index){
 }
 updateSlide();
 
-
 // Parallax Animation
 function imgParallax( event, progress ) {
   flkty.slides.forEach( function( slide, i ) {
@@ -48,56 +46,48 @@ imgParallax();
 
 // update Title & title Animation
 function updateTitle(event, index){
-  $('.main-project-title').css('opacity', '0');
-  $('.main-project-title').css('transform', 'translate3d(0, -50px, 0');
-  $('.main-project-title').css('transition', 'none');
 
-  var slideTitle = setInterval(function(){
-    $('.main-project-title').css('opacity', '1');
-    $('.main-project-title').css('transform', 'translate3d(0, 0, 0');
-    $('.main-project-title').css('transition', 'all .8s ease');
-    clearInterval(slideTitle);
+  $('.main-project-title span').removeClass('swipe-animate');
+  $('.main-project-subtitle span').removeClass('swipe-animate');
+  $('.main-project-date span').removeClass('swipe-animate');
+
+  var slideTitleAnime = setInterval(function(){
+    $('.main-project-title span').addClass('swipe-animate');
+    $('.main-project-subtitle span').addClass('swipe-animate');
+    $('.main-project-date span').addClass('swipe-animate');
+    clearInterval(slideTitleAnime);
   }, 100)
 
-  var index = flkty.selectedIndex;
+  index = flkty.selectedIndex;
 
-  switch(index){
-      case 0: 
-        $('.main-project-title').text("Service Design for Smart Display : Kakao mini");
-        break;
-      case 1: 
-        $('.main-project-title').text("Brand Identity for The Hungarian Fashion and Design");
-        break;
-      case 2: 
-        $('.main-project-title').text("McDonald's x Spotify's Frieslist: Transform your fries into music");
-        break;
-      case 3: 
-        $('.main-project-title').text("Animation video platform for blockchain and ICO's projects");
-        break;
-    }
+  var slideTitle = setInterval(function(){
+    $('.main-project-title span').html(projectInfo[index].title);
+    $('.main-project-subtitle span').html(projectInfo[index].subtitle);
+    $('.main-project-date span').html(projectInfo[index].date);
+    clearInterval(slideTitle);
+  }, 1000)  
 }
+
 updateTitle();
 
-$carousel.on('change.flickity', updateIndex);
+$carousel.on('settle.flickity', updateIndex);
 $carousel.on('select.flickity', updateSlide);
 $carousel.on('scroll.flickity', imgParallax);
 $carousel.on('change.flickity', updateTitle);
 
 
-
 $('.main-project-title').click(function(){
+  linkPageIndex = 3 + flkty.selectedIndex;
   goDetail();
-  linkPageIndex = 3;
 });
 
 
-
-// Mousewheel interaction
 $(document).ready(function(){
   $('.main-carousel').css('opacity', '1');
   $('.main-carousel').css('transition', 'all .6s ease');
 });
 
+// Mousewheel interaction
 $('.main-carousel').mousewheel(function(e) {
     e.preventDefault();
     var flkty = Flickity.data(this);

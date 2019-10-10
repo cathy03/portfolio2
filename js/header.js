@@ -2,9 +2,12 @@ var linkPageIndex;
 var linkPage = [
   "index.html",
   "work.html",
-  "about.html",
-  "test.html"
+  "about.html"
 ]
+
+for (var i = 0; i < projectInfo.length; i++){
+  linkPage.push(  projectInfo[i].linkPage);
+}
 
 var contentsBg = [
   "#3A467C",
@@ -23,7 +26,7 @@ function goMenu(){
 function goDetail(){
   $('.revealer').css('opacity','1');
   $('.revealer__layer').addClass('revealer--animate--totop');
-  $('.revealer--animate--totop:nth-child(3)').css('background-color', contentsBg[flkty.selectedIndex]);
+  //$('.revealer--animate--totop:nth-child(3)').css('background-color', contentsBg[flkty.selectedIndex]);
 };
 
 

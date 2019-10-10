@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="Viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/content.css">
+  <style>
+    .header-container{
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <ul class="header">
+      <li class="header-logo"></li>
+      <li class="header-group header-title">YEOJOON</li>
+      <li class="header-group header-work">WORK</li>
+      <li class="header-group header-about">ABOUT</li>
+      <li class="header-group header-contact">CONTACT</li>
+    </ul>    
+  </div>
+  <div class="content-container">
+    <div class="icon-group">
+      <img class="icon" src="img/ic_linkedin.png">
+      <img class="icon" src="img/ic_instagram.png">
+    </div>
+    <div class="content-group">
+      <div class="content">
+        <div class="content-info">
+          <div class="content-subtitle">UI / UX Design<br>Interaction Design</div>
+          <div class="content-date">2019</div>
+        </div>
+        <div class="content-title">Side Project for Studying javascript : My Awesome Film</div>
+      </div>
+      <div class="content not-anim"><div class="content-img"><img src="img/Concept0_Perspective.jpg"></div></div>
+      <div class="content">
+        <div class="content-info-title">Goals and Tasks</div>
+        <div class="content-1paragraph">We designed the website for Lemon Digital who create high quality animation videos for ICO and Blockchain projects, which took them to the next greater stage in business sphere and expanded their sphere of influence in digital world.</div>
+        <div class="content-1img"><img src="img/content_00/dddd.png"></div>
+      </div>
+      <div class="content">
+        <ul class="content-img-4column">
+          <li class="content-4img"><img src="img/content_00/poster_00.jpg"></li>
+          <li class="content-4img img-second"><img src="img/content_00/poster_01.jpg"></li>
+          <li class="content-4img img-third"><img src="img/content_00/poster_02.jpg"></li>
+          <li class="content-4img img-forth"><img src="img/content_00/poster_00.jpg"></li>
+        </ul>
+        <div class="content-2paragraph">We designed the website for Lemon Digital who create high quality animation videos for ICO and Blockchain projects, which took them to the next greater stage in business sphere and expanded their sphere of influence in digital world.</div>
+        <div class="content-2paragraph">We designed the website for Lemon Digital who create high quality animation videos for ICO and Blockchain projects, which took them to the next greater stage in business sphere and expanded their sphere of influence in digital world.</div>
+      </div>
+      <div class="content">
+        <ul class="content-img-4column">
+          <div class="content-info-title">Mobile</div>
+          <li class="content-4img img-second"><img src="img/content_00/poster_00.jpg"></li>
+          <li class="content-4img img-third"><img src="img/content_00/poster_01.jpg"></li>
+          <li class="content-4img img-forth"><img src="img/content_00/poster_02.jpg"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="revealer">
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.easeScroll.js"></script>
+  <script type="text/javascript">
+
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 20,
+      accelerationMax: 1,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true
+    });
+
+    function listAnimation(){
+      $('.content').each(function (i) {
+        var $workList = $(this);
+        setTimeout(function(){
+          $workList.css('opacity', '1');
+          $workList.css('transform', 'translate3d(0, 0, 0');
+          $workList.css('transition', 'all 1s ease');
+          $('.content-img').addClass('content-img-anim');
+        }, i*300);
+      });
+    }
+
+    $(document).ready(listAnimation);
+  </script>
+  <script src="js/info.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>

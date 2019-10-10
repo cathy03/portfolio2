@@ -58,6 +58,12 @@
     --blog-content-margin-left: calc((var(--column) + var(--base-side-margin)) * 3);
 }
 
+body{
+  overflow-y: hidden; 
+  overflow-x: hidden;
+  font-family: 'SF UI Display';
+}
+
 .header-container{
   position: fixed;
   top: 0;
@@ -102,12 +108,13 @@
 
 .header-contact{
   grid-column: 12;
+  text-align: right;
 }
 
 .icon-group{
   position: fixed;
   right: var(--base-side-margin);
-  bottom: 20px;
+  bottom: var(--base-side-margin);
   z-index: 5000;
   width: 24px;
 
@@ -116,7 +123,7 @@
 .icon{
   width: 24px;
   height: 24px;
-  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 .revealer {

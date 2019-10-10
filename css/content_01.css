@@ -34,9 +34,16 @@ body{
   grid-column: 2 / span 2;
 }
 
-.content-info-title{
+.content-info-index{
   grid-column: 1 / span 2;
   font-size: 18px;
+}
+
+.content-info-index li{
+  padding-bottom: 10px;
+}
+
+.content-info-index-selected{
   font-weight: 800;
 }
 
@@ -58,21 +65,58 @@ body{
   line-height: 1.1;
 }
 
-.content-1paragraph{
+h2{
+  font-size: 60px;
+  margin-top: -12px;
+  padding-bottom: 12px;
+}
+
+h3{
+  font-size: 32px;
+  padding-top: 80px;
+  padding-bottom: 12px;
+}
+
+span{
+  display: inline-block;
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+.divider{
+  height: 1px;
+  background-color: #DDDDDD;
+  margin-top: 80px;
+}
+
+.content-items{
   grid-column: 3 / span 6;
   font-size: 18px;
-  line-height: 1.6;
+  margin-bottom: 80px;
 }
 
-.content-2paragraph{
-  grid-column: 3 / span 3;
-  margin-top: 80px;
-  font-size: 18px;
-  line-height: 1.6;
+.content-item{
 }
 
-.content-2paragraph:nth-child(3){
-  grid-column: 6 / span 3;
+.img-container{
+  width: 100%;
+  height: 280px;
+}
+
+.img-container.dot{
+  background-color: #343646;
+}
+
+.img-container.line{
+  background-color: #F5F5F5;
+}
+
+.lottie{
+  width: 280px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .content-img {
@@ -98,27 +142,16 @@ body{
   transition: all .8s .6s ease;
 }
 
-.content-1img {
-  grid-column: 3 / span 6;
-  margin-top: 80px;
-  overflow: hidden;
-  position: relative;
-}
-
-
 .content-img-4column {
   display: grid;
-  grid-column: 1 / span 8;
-  grid-template-columns:repeat(8, 1fr);
+  grid-template-columns:repeat(6, 1fr);
   grid-column-gap: var(--base-side-margin);
-  margin-top: 80px;
 }
 
 .content-4img {
   grid-column: 1 / span 2;
   overflow: hidden;
   position: relative;
-  background-color: #222;
 }
 
 .content-4img.img-second {
@@ -131,6 +164,18 @@ body{
 
 .content-4img.img-forth {
   grid-column: 7 / span 2;
+}
+
+.content-4img .lottie{
+  width: 100%;
+}
+
+.content-4img .lottie-agent-line{
+  background-color: #F5F5F5;
+}
+
+.content-4img .lottie-agent-dot{
+  background-color: #343646;
 }
 
 img{

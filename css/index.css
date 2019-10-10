@@ -4,48 +4,99 @@ body{
 
 .main-project{
   display: grid;
+  width: calc(100vw - var(--base-side-margin)*2);
   grid-template-columns: var(--grid-columns);
   grid-column-gap: var(--base-side-margin);
   padding: 0 var(--base-side-margin);
   position: absolute;
-  top:48%;
+  top:75%;
   transform: translateY(-50%);
+  transition: all .4s ease;
   z-index: 5000;
+  color: #fff;
 }
 
 .main-project-index{
-  grid-column: 3 / span 1;
-  margin-top: 24px;
+  grid-column: 10 / span 1;
+  margin-top: calc(4vh + 4px);
+  font-size: 14px;
   text-align: right;
-  color: #fff;
-  font-size: 18px;
+  right: 0;
+  position: absolute;
   font-weight: 800;
-
 }
 
 .main-project-slide{
-  grid-column: 4 / span 2;
-  margin-top: 30px;
-  height: 2px;
+  grid-column: 2 / span 10;
+  margin-bottom: 4vh;
+  height: 1px;
   background-color: #fff;
 }
 
 .main-project-date{
-  grid-column: 6 / span 5;
-  margin-top: 24px;
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 800;
+  grid-column: 2 / span 1;
+  margin-top: 4px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 250px;
+  position: relative;
 }
 
 .main-project-title{
   grid-column: 6 / span 5;
   font-size: 60px;
   font-weight: 800;
-  color: #FFFFFF;
   line-height: 1.1;
+  overflow: hidden;
   cursor:pointer;
+  height: 250px;
+  position: relative;
+}
+
+span{
+  display: block;
+  position: absolute;
+}
+
+.swipe-animate{
+  animation: anim-effect-swipe 2s forwards;
+}
+
+@keyframes anim-effect-swipe {
+  0% {
+    transform: translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }
+
+  40% {
+    transform: translate3d(0, -250px, 0);
+    animation-timing-function: cubic-bezier(0.905, 0.150, 0.150, 0.780);
+  }
+
+  90% {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.main-project:hover{
+  color: #ff8864;
+}
+
+
+.main-project-subtitle{
+  grid-column: 4 / span 2;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 800;
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+}
+
+.main-project-detail{
+  grid-column: 6 / span 5;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 .main-carousel{
@@ -63,4 +114,5 @@ body{
 
 .carousel-cell img{
   height: 100vh;
+  opacity: .5;
 }

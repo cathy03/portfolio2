@@ -46,5 +46,5 @@ body{
 
 .header li:hover{
   color: #ff8864;
-  transition: all .6s ease;
+  transition: all .4s ease;
 }

@@ -24,36 +24,7 @@
       <img class="icon" src="img/ic_linkedin.png">
       <img class="icon" src="img/ic_instagram.png">
     </div>
-    <ul class="work-group">
-      <li class="work-list">
-        <div class="work-list-info">
-          <div class="work-list-subtitle">UI / UX Design<br>Interaction Design</div>
-          <div class="work-list-date">2019</div>
-        </div>
-        <div class="work-list-title">Brand Identity for The Hungarian Fashion and Design</div>
-      </li>
-      <li class="work-list">
-        <div class="work-list-info">
-          <div class="work-list-subtitle">UI / UX Design<br>Interaction Design</div>
-          <div class="work-list-date">2019</div>
-        </div>
-        <div class="work-list-title">McDonald's x Spotify's Frieslist: Transform your fries into music</div>
-      </li>
-      <li class="work-list">
-        <div class="work-list-info">
-          <div class="work-list-subtitle">UI / UX Design<br>Interaction Design</div>
-          <div class="work-list-date">2019</div>
-        </div>
-        <div class="work-list-title">Animation video platform for blockchain and ICO's projects</div>
-      </li>
-      <li class="work-list">
-        <div class="work-list-info">
-          <div class="work-list-subtitle">UI / UX Design<br>Interaction Design</div>
-          <div class="work-list-date">2019</div>
-        </div>
-        <div class="work-list-title">Animation video platform for blockchain and ICO's projects</div>
-      </li>
-    </ul>
+    <ul class="work-group"></ul>
   </div>
   <div class="revealer">
     <div class="revealer__layer"></div>
@@ -61,8 +32,26 @@
     <div class="revealer__layer"></div>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/header.js"></script>
+  <script src="js/jquery.easeScroll.js"></script>
+  <script src="js/info.js"></script>
   <script type="text/javascript">
+
+    function updateList(){
+      for(var i = 0; i < projectInfo.length; i++){
+        $('.work-group').append('<li class="work-list"><div class="work-list-info"><div class="work-list-subtitle"></div><div class="work-list-date"></div></div><div class="work-list-title"></div></li>');
+      }
+
+      $('.work-list-title').each(function (index, item) { 
+        $(item).html(projectInfo[index].title); 
+      });
+      $('.work-list-subtitle').each(function (index, item) { 
+        $(item).html(projectInfo[index].subtitle); 
+      });
+      $('.work-list-date').each(function (index, item) { 
+        $(item).html(projectInfo[index].date); 
+      });
+    };
+    updateList();
 
     function listAnimation(){
       $('.work-group li').each(function (i) {
@@ -70,13 +59,37 @@
         setTimeout(function(){
           $workList.css('opacity', '1');
           $workList.css('transform', 'translate3d(0, 0, 0');
-          $workList.css('transition', 'all .6s ease');
+          $workList.css('transition', 'all 1s ease');
         }, i*300);
       });
     }
 
     $(document).ready(listAnimation);
 
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 20,
+      accelerationMax: 1,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true
+    });
+
+
+    $('.work-group li').click(function(){
+      index = $('.work-group li').index(this);
+      linkPageIndex = 3 + index;
+      goDetail();
+    });
+
   </script>
+  <script src="js/header.js"></script>
+  
 </body>
 </html>
