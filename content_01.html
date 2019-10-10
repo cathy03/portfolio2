@@ -122,8 +122,9 @@
       $('.content-4img .lottie').css('height', lottieWidth);
     });
 
-    const agentDot = bodymovin.loadAnimation({
-      container: $('.lottie-agent-dot'),
+    var lottieAgentDot = $('.lottie-agent-dot');
+    var agentDot = bodymovin.loadAnimation({
+      container: lottieAgentDot,
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -132,7 +133,7 @@
 
     agentDot.play();
 
-    const agentLine = bodymovin.loadAnimation({
+    var agentLine = bodymovin.loadAnimation({
       container: $('.lottie-agent-line'),
       renderer: 'svg',
       loop: true,
