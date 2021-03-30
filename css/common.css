@@ -7,7 +7,7 @@
     --quarternary: rgba(0, 0, 0, .12);
     --primary-color-reverse: #ffffff;
     --header-bg: rgba(255, 255, 255, .95);
-    --font-family: din-2014, "Avenir", "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-family:  "Avenir", "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     /* Typography */
     --text-size-body: 14px;
     --line-height-body: 20px;
@@ -61,7 +61,10 @@
 body{
   overflow-y: hidden; 
   overflow-x: hidden;
-  font-family: 'SF UI Display';
+  font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+  word-wrap: break-word;
+  word-break: keep-all;
+
 }
 
 .header-container{
@@ -71,6 +74,7 @@ body{
   left: 0;
   z-index: 10000;
   color: #fff;
+  transition: all .4s ease;
 }
 
 .header{  

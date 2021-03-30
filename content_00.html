@@ -100,6 +100,17 @@
     }
 
     $(document).ready(listAnimation);
+
+
+    window.onscroll = function() {scrollHeader()};
+
+    function scrollHeader() {
+      if (document.documentElement.scrollTop > 20) {
+        $('.header-container').css('top', '-50px');
+      } else {
+        $('.header-container').css('top', '0');
+      }
+    }
   </script>
   <script src="js/info.js"></script>
   <script src="js/header.js"></script>
