@@ -66,7 +66,7 @@
               that necessary information can be seen at a glance.</span>
             <ul class="content-3column">
               <li class="content-3column-item">
-                <div id="lottie" class="img-container" style="background-color: #F5F5F5; width: 256px;"></div>
+                <div id="lottie-dot-agent" class="img-container" style="background-color: #F5F5F5; width: 256px;"></div>
                 <span>Listening</span>
               </li>
               <li class="content-3column-item">
@@ -256,6 +256,15 @@
       loop: true, // Optional
       autoplay: true, // Optional
     });
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie-dot-agent'), // Required
+      path: 'json/data.json', // Required
+      renderer: 'svg',
+      loop: true, // Optional
+      autoplay: true, // Optional
+    });
+
 
     function listAnimation() {
       $('.content').each(function (i) {
