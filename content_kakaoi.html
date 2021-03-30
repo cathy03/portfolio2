@@ -54,7 +54,7 @@
             <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
               that necessary information can be seen at a glance.</span>
             <div class="img-container line">
-              <div class="lottie lottie-agent-line"></div>
+              <div id="lottie" class="lottie-agent-line"></div>
             </div>
             <h3>Yellow Ring</h3>
             <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
@@ -235,7 +235,7 @@
   <script src="js/jquery.easeScroll.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
     var animation = bodymovin.loadAnimation({
-      container: $('.lottie'), // Required
+      container: document.getElementById('lottie'), // Required
       path: 'json/line_data.json', // Required
       renderer: 'svg/canvas/html', // Required
       loop: true, // Optional
