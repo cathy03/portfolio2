@@ -7,10 +7,11 @@ body{
   margin-top: 100px;
   margin-bottom: 100px;
   position: absolute;
-  overflow: hidden;
   top:0;
   left: 0;
+  right:0;
 }
+
 .title-section{
   width: 824px;
   padding: 0 40px;
