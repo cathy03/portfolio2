@@ -233,17 +233,7 @@
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.easeScroll.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.7/lottie.min.js">
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('lottie'), // Required
-      path: 'json/line_data.json', // Required
-      renderer: 'svg/canvas/html', // Required
-      loop: true, // Optional
-      autoplay: true, // Optional
-      name: "Hello World", // Name for future reference. Optional.
-    })
-  </script>
-
+  <script src="js/lottie.js"></script>
   <script type="text/javascript">
     $("html").easeScroll({
       frameRate: 60,
@@ -259,6 +249,16 @@
       touchpadSupport: true,
       fixedBackground: true
     });
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie'), // Required
+      path: 'json/line_data.json', // Required
+      renderer: 'svg',
+      loop: true, // Optional
+      autoplay: true, // Optional
+    });
+
+    animation.play();
 
     function listAnimation() {
       $('.content').each(function (i) {
