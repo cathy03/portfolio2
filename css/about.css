@@ -58,4 +58,7 @@ body{
   .work-list-date{
     font-size: 24px;
   }
+  .work-list{
+    margin-top: 40px;
+  }
 }
