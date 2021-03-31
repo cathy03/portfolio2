@@ -50,3 +50,12 @@ body{
   color: #ff8864;
   transition: all .4s ease;
 }
+
+@media screen and (max-width: 1300px) {
+  .work-list-title{
+    font-size: 40px;
+  }
+  .work-list-date{
+    font-size: 24px;
+  }
+}
