@@ -162,6 +162,15 @@ font-size: 20px;
 letter-spacing: 0;
 line-height: 32px;
 }
+a {
+  color:#003DFF;
+  margin: 8px 0;
+  display: block;
+}
+
+a h3{
+font-weight: 600;
+}
 
 img{
   width: 100%;
