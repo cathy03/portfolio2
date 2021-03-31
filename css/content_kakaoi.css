@@ -20,11 +20,12 @@ body{
   position: relative;
 }
 .title-info{
-  width: 248px;
+  width: 240px;
   font-size: 16px;
   line-height: 24px;
   position: absolute;
-  right: -248px;
+  right: -240px;
+  top:0;
 }
 
 .title-info-client{
@@ -324,5 +325,12 @@ img{
   opacity: 1;
   color:#003DFF; 
   border-bottom: 3px solid #003DFF;
+}
 
+@media screen and (max-width: 1400px) {
+  .title-info{
+    right: auto;
+    top:auto;
+    margin-top: 24px;
+  }
 }
