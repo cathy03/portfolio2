@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title></title>
   <meta charset="utf-8">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/about.css">
 
 </head>
+
 <body>
   <div class="header-container">
     <ul class="header">
@@ -17,7 +19,7 @@
       <li class="header-group header-work">WORK</li>
       <li class="header-group header-about">ABOUT</li>
       <li class="header-group header-contact">CONTACT</li>
-    </ul>    
+    </ul>
   </div>
   <div class="work-container">
     <div class="icon-group">
@@ -26,11 +28,13 @@
     </div>
     <ul class="work-group">
       <li class="work-list">
-        <div class="work-list-title">UI designer with a keen interest in UI interaction and front-end web development.</div>
+        <div class="work-list-title">UI designer with a keen interest in UI interaction and front-end web development.
+        </div>
       </li>
       <li class="work-list">
-        <div class="work-list-date">Experience</div>
-        <div class="work-list-subtitle">I love everything that has to do with product & visual design, mobile & web projects as well as branding, typography, and animations. With my solid industry experience, I know how to help clients solve real business cases and grow their businesses by using design thinking.</div>
+        <div class="work-list-subtitle">I love everything that has to do with product & visual design, mobile & web
+          projects as well as branding, typography, and animations. With my solid industry experience, I know how to
+          help clients solve real business cases and grow their businesses by using design thinking.</div>
       </li>
       <li class="work-list">
         <div class="work-list-date">Yoon yeojoon<br>yoonyeojooncathy@gmail.com</div>
@@ -48,14 +52,14 @@
 
   <script type="text/javascript">
 
-    function listAnimation(){
+    function listAnimation() {
       $('.work-group li').each(function (i) {
         var $workList = $(this);
-        setTimeout(function(){
+        setTimeout(function () {
           $workList.css('opacity', '1');
           $workList.css('transform', 'translate3d(0, 0, 0');
           $workList.css('transition', 'all 1s ease');
-        }, i*300);
+        }, i * 300);
       });
     }
 
@@ -64,4 +68,5 @@
   </script>
 
 </body>
+
 </html>

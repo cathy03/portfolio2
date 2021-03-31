@@ -15,6 +15,7 @@ body{
   grid-template-columns: var(--grid-columns);
   grid-column-gap: var(--base-side-margin);
   padding: 0 var(--base-side-margin);
+  margin-bottom: 80px;
 }
 
 .work-list{

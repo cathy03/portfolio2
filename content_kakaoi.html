@@ -36,12 +36,6 @@
       </div>
       <div class="title-img"><img src="img/content_01/main.png"></div>
       <div class="content-section">
-        <ul class="content-info-index">
-          <li class="content-info-index-selected">Voice Agent</li>
-          <li class="">View Templete</li>
-          <li class="">Templete Layout</li>
-          <li class="">Interaction</li>
-        </ul>
         <div class="content-items">
           <div class="content-item">
             <h2>Voice Agent</h2>
@@ -91,6 +85,8 @@
             </ul>
           </div>
         </div>
+      </div>
+      <div class="content-section">
         <div class="content-items">
           <div class="content-item">
             <h2>View Template</h2>
@@ -177,7 +173,8 @@
             </div>
             <div class="content-item">
               <h3>Customize</h3>
-              <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
+              <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible
+                so
                 that necessary information can be seen at a glance.</span>
               <div class="img-container"><img src="img/content_01/viewTem_custom_rule.png"></div>
               <div class="content-item-chart">
@@ -204,106 +201,218 @@
               <div class="img-container"><img src="img/content_01/viewTem_custom.png"></div>
             </div>
           </div>
-          <div class="content-items">
-            <div class="content-item">
-              <h2>Template Layout</h2>
-              <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
-                that necessary information can be seen at a glance.</span>
-              <div class="divider"></div>
+        </div>
+      </div>
+      <div class="img-container" style="margin:0; padding:0;"><img src="img/content_01/viewTem_main.jpg"></div>
+      <div class="content-section">
+        <div class="content-items">
+          <div class="content-item">
+            <h2>Template Layout</h2>
+            <span>Kakao i가 SDK 형태로 다양한 서비스에 붙게 되면서, 여러가지 디바이스에 대응할 수 있는 레이아웃 구조가 필요했다. 이에 3가지 레이아웃(Card, Landscape,
+              Portrait)으로 디자인 작업 및 가이드를 작성하였다. 현재 이 레이아웃 타입은 개발 적용이 되지 않은 상태이다.</span>
+            <div class="divider"></div>
+          </div>
+          <div class="content-item">
+            <h3>Card Layout</h3>
+            <span>디바이스내 화면을 일부만 사용하여, 빠르게 정보를 파악할 수 있도록 구성한 레이아웃 타입으로 디스플레이가 큰 TV, 스마트미러에 적합한 타입이다. LG TV 및 LG 헬로비전에
+              적용되어 서비스되고 있다.</span>
+            <div class="layout-section card-layout">
+              <div class="device-screen">screen
+                <div class="view-template">View Template</div>
+              </div>
+              <div class="layout-tab">
+                <ul class="device">
+                  <li class="active" device-width="582" device-height="340"></li>
+                  <li device-width="396" device-height="270"></li>
+                  <li device-width="174" device-height="320"></li>
+                </ul>
+              </div>
             </div>
-            <div class="content-item">
-              <h3>Card Layout</h3>
-              <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
-                that necessary information can be seen at a glance.</span>
-              <div class="img-container"><img src="img/content_01/viewTem_layout_card.png"></div>
+          </div>
+        </div>
+        <div class="content-item">
+          <h3>Landscape Layout</h3>
+          <span>가로로 긴 디스플레이기기에 어울리는 레이아웃으로 Carousel 뷰템플릿 타입과 같이 좌/우 인터랙션에 적합하다. TV 리모컨으로 동작할 수 있도록 고려하여 디자인하였으나, 일정상의
+            이유로 적용되지는 않았다. </span>
+          <div class="layout-section land-layout">
+            <div class="device-screen">screen
+              <div class="view-template">View Template</div>
             </div>
-            <div class="content-item">
-              <h4>TV</h4>
-              <div class="img-container"><img src="img/content_01/viewTem_layout_card2.png"></div>
-              <h4>Smart Mirror</h4>
-              <div class="img-container"><img src="img/content_01/viewTem_layout_card3.png"></div>
+            <div class="layout-tab">
+              <ul class="device">
+                <li class="active" device-width="582" device-height="340"></li>
+                <li device-width="396" device-height="270"></li>
+                <li device-width="174" device-height="320"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-item">
+          <h3>Portrait Layout</h3>
+          <span>Voice agent is a form that assists voice search, and it is configured to be as simple as possible so
+            that necessary information can be seen at a glance.</span>
+          <div class="layout-section port-layout">
+            <div class="device-screen">screen
+              <div class="view-template">View Template</div>
+            </div>
+            <div class="layout-tab">
+              <ul class="device">
+                <li class="active" device-width="582" device-height="340"></li>
+                <li device-width="396" device-height="270"></li>
+                <li device-width="174" device-height="320"></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="img-container sample">
+        <div class="sample-tab">
+          <ul class="device">
+            <li class="active" imgUrl="img/content_01/layout_card.jpg">Card</li>
+            <li imgUrl="img/content_01/layout_land.jpg">Landscape</li>
+            <li imgUrl="img/content_01/layout_port.jpg">Portrait</li>
+          </ul>
+        </div>
+        <img id="layout_img" src="img/content_01/layout_card.jpg">
+      </div>
+
     </div>
+  </div>
+  </div>
+  </div>
 
-    <div class="revealer">
-      <div class="revealer__layer"></div>
-      <div class="revealer__layer"></div>
-      <div class="revealer__layer"></div>
-    </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.easeScroll.js"></script>
-    <script src="js/lottie.js"></script>
-    <script type="text/javascript">
-      $("html").easeScroll({
-        frameRate: 60,
-        animationTime: 1000,
-        stepSize: 120,
-        pulseAlgorithm: 1,
-        pulseScale: 8,
-        pulseNormalize: 1,
-        accelerationDelta: 20,
-        accelerationMax: 1,
-        keyboardSupport: true,
-        arrowScroll: 50,
-        touchpadSupport: true,
-        fixedBackground: true
+  <div class="revealer">
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+    <div class="revealer__layer"></div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.easeScroll.js"></script>
+  <script src="js/lottie.js"></script>
+  <script type="text/javascript">
+
+    var cardButton = $(".card-layout .device li");
+    var landButton = $(".land-layout .device li");
+    var portButton = $(".port-layout .device li");
+
+    cardButton.on("click", function () {
+      $(".card-layout .view-template").css("bottom", 18);
+      $(".card-layout .device li").removeClass("active");
+      $(this).addClass("active");
+      var newWidth = $(this).attr("device-width");
+      var newHeight = $(this).attr("device-height");
+      $(".card-layout .device-screen").css("width", newWidth);
+      $(".card-layout .device-screen").css("height", newHeight);
+    });
+
+    $(".card-layout .device li:nth-child(3)").on("click", function () {
+      $(".card-layout .view-template").css("bottom", 80);
+    });
+
+    landButton.on("click", function () {
+      $(".land-layout .view-template").css("height", 160);
+      $(".land-layout .device li").removeClass("active");
+      $(this).addClass("active");
+      var newWidth = $(this).attr("device-width");
+      var newHeight = $(this).attr("device-height");
+      $(".land-layout .device-screen").css("width", newWidth);
+      $(".land-layout .device-screen").css("height", newHeight);
+    });
+
+    $(".land-layout .device li:nth-child(2)").on("click", function () {
+      $(".land-layout .view-template").css("height", 254);
+    });
+
+    portButton.on("click", function () {
+      $(".port-layout .view-template").css("width", 158);
+      $(".port-layout .device li").removeClass("active");
+      $(this).addClass("active");
+      var newWidth = $(this).attr("device-width");
+      var newHeight = $(this).attr("device-height");
+      $(".port-layout .device-screen").css("width", newWidth);
+      $(".port-layout .device-screen").css("height", newHeight);
+    });
+
+    $(".port-layout .device li:nth-child(2)").on("click", function () {
+      $(".port-layout .view-template").css("width", 190);
+    });
+
+    var layoutButton = $(".sample-tab .device li");
+    layoutButton.on("click", function () {
+      $(".sample-tab li").removeClass("active");
+      $(this).addClass("active");
+      var newImgUrl = $(this).attr("imgurl");
+      $("#layout_img").attr("src", newImgUrl);
+    });
+
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 20,
+      accelerationMax: 1,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true
+    });
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie'), // Required
+      path: 'json/line_data.json', // Required
+      renderer: 'svg',
+      loop: true, // Optional
+      autoplay: true, // Optional
+    });
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie-dot-agent'), // Required
+      path: 'json/data.json', // Required
+      renderer: 'svg',
+      loop: true, // Optional
+      autoplay: true, // Optional
+    });
+
+
+    function listAnimation() {
+      $('.content').each(function (i) {
+        var $workList = $(this);
+        setTimeout(function () {
+          $workList.css('opacity', '1');
+          $workList.css('transform', 'translate3d(0, 0, 0');
+          $workList.css('transition', 'all 1s ease');
+          $('.content-img').addClass('content-img-anim');
+        }, i * 300);
       });
+    }
 
-      var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie'), // Required
-        path: 'json/line_data.json', // Required
-        renderer: 'svg',
-        loop: true, // Optional
-        autoplay: true, // Optional
-      });
+    $(document).ready(listAnimation);
 
-      var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie-dot-agent'), // Required
-        path: 'json/data.json', // Required
-        renderer: 'svg',
-        loop: true, // Optional
-        autoplay: true, // Optional
-      });
+    window.onscroll = function () { scrollHeader(), scrollContentIndex() };
 
-
-      function listAnimation() {
-        $('.content').each(function (i) {
-          var $workList = $(this);
-          setTimeout(function () {
-            $workList.css('opacity', '1');
-            $workList.css('transform', 'translate3d(0, 0, 0');
-            $workList.css('transition', 'all 1s ease');
-            $('.content-img').addClass('content-img-anim');
-          }, i * 300);
-        });
+    function scrollHeader() {
+      if (document.documentElement.scrollTop > 20) {
+        $('.header-container').css('top', '-50px');
+      } else {
+        $('.header-container').css('top', '0');
       }
+    }
 
-      $(document).ready(listAnimation);
-
-      window.onscroll = function () { scrollHeader(), scrollContentIndex() };
-
-      function scrollHeader() {
-        if (document.documentElement.scrollTop > 20) {
-          $('.header-container').css('top', '-50px');
-        } else {
-          $('.header-container').css('top', '0');
-        }
+    function scrollContentIndex() {
+      if (document.documentElement.scrollTop > 1350) {
+        $('.content-info-index').addClass('fixed');
+      } else {
+        $('.content-info-index').removeClass('fixed');
       }
+    }
 
-      function scrollContentIndex() {
-        if (document.documentElement.scrollTop > 1350) {
-          $('.content-info-index').addClass('fixed');
-        } else {
-          $('.content-info-index').removeClass('fixed');
-        }
-      }
 
-    </script>
-    <script src="js/info.js"></script>
-    <script src="js/header.js"></script>
+  </script>
+  <script src="js/info.js"></script>
+  <script src="js/header.js"></script>
 
 </body>
 
