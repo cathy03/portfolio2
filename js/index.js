@@ -41,7 +41,6 @@ function imgParallax(event, progress) {
     img.style.transform = 'translateX( ' + x + 'px)';
   });
 }
-imgParallax();
 
 // update Title & title Animation
 function updateTitle(event, index) {
@@ -86,6 +85,7 @@ $(window).ready(function () {
   updateIndex();
   updateTitle();
   updateSlide();
+  imgParallax();
 
 });
 
