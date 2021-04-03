@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title></title>
   <meta charset="utf-8">
@@ -7,8 +8,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/work.css">
-
+  <style type="text/css">
+    @font-face {
+      font-family: GothamPro;
+      font-style: normal;
+      src: url("font/GothamPro-Bold.eot");
+      src: url("font/GothamPro-Bold.woff") format('woff'),
+        url("font/GothamPro-Bold.ttf") format('truetype');
+      src: local(※), url("font/GothamPro-Bold.woff") format('woff');
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
   <div class="header-container">
     <ul class="header">
@@ -17,7 +29,7 @@
       <li class="header-group header-work">WORK</li>
       <li class="header-group header-about">ABOUT</li>
       <li class="header-group header-contact">CONTACT</li>
-    </ul>    
+    </ul>
   </div>
   <div class="work-container">
     <div class="icon-group">
@@ -36,31 +48,31 @@
   <script src="js/info.js"></script>
   <script type="text/javascript">
 
-    function updateList(){
-      for(var i = 0; i < projectInfo.length; i++){
+    function updateList() {
+      for (var i = 0; i < projectInfo.length; i++) {
         $('.work-group').append('<li class="work-list"><div class="work-list-info"><div class="work-list-subtitle"></div><div class="work-list-date"></div></div><div class="work-list-title"></div></li>');
       }
 
-      $('.work-list-title').each(function (index, item) { 
-        $(item).html(projectInfo[index].title); 
+      $('.work-list-title').each(function (index, item) {
+        $(item).html(projectInfo[index].title);
       });
-      $('.work-list-subtitle').each(function (index, item) { 
-        $(item).html(projectInfo[index].subtitle); 
+      $('.work-list-subtitle').each(function (index, item) {
+        $(item).html(projectInfo[index].subtitle);
       });
-      $('.work-list-date').each(function (index, item) { 
-        $(item).html(projectInfo[index].date); 
+      $('.work-list-date').each(function (index, item) {
+        $(item).html(projectInfo[index].date);
       });
     };
     updateList();
 
-    function listAnimation(){
+    function listAnimation() {
       $('.work-group li').each(function (i) {
         var $workList = $(this);
-        setTimeout(function(){
+        setTimeout(function () {
           $workList.css('opacity', '1');
           $workList.css('transform', 'translate3d(0, 0, 0');
           $workList.css('transition', 'all 1s ease');
-        }, i*300);
+        }, i * 300);
       });
     }
 
@@ -82,7 +94,7 @@
     });
 
 
-    $('.work-group li').click(function(){
+    $('.work-group li').click(function () {
       index = $('.work-group li').index(this);
       linkPageIndex = 3 + index;
       goDetail();
@@ -90,6 +102,7 @@
 
   </script>
   <script src="js/header.js"></script>
-  
+
 </body>
+
 </html>

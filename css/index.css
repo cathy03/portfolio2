@@ -45,7 +45,9 @@ body{
 .main-project-title{
   grid-column: 6 / span 5;
   font-size: 60px;
-  font-weight: 800;
+  font-family: GothamPro;
+  font-weight: 600;
+  letter-spacing: -1.5px;
   line-height: 1.1;
   overflow: hidden;
   cursor:pointer;

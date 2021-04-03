@@ -38,9 +38,10 @@ body{
 
 .content-title{
   font-size: 80px;
-  font-weight: 800;
-  letter-spacing: 0;
-  line-height: 80px;
+  font-family: GothamPro;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1.1;
 }
 
 .content-section{
@@ -138,16 +139,18 @@ body{
 
 h2{
   font-size: 48px;
-  font-weight: 800;
-  letter-spacing: -0.4px;
+  font-family: GothamPro;
+  font-weight: 600;
+  letter-spacing: -1.5px;
   line-height: 56px;
   margin-bottom: 32px;
 }
 
 h3{
 font-size: 24px;
-font-weight: 800;
-letter-spacing: 0;
+font-family: GothamPro;
+letter-spacing: -1px;
+font-weight: 600;
 line-height: 32px;
 margin-bottom: 16px;
 }
@@ -167,10 +170,6 @@ a {
   color:#003DFF;
   margin: 8px 0;
   display: block;
-}
-
-a h3{
-font-weight: 600;
 }
 
 img{

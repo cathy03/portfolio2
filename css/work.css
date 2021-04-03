@@ -46,10 +46,11 @@ body{
 .work-list-title{
   grid-column: 5 / span 5;
   font-size: 60px;
-  font-weight: 800;
+  font-family: GothamPro;
+  font-weight: 600;
+  letter-spacing: -1px;
   line-height: 1.1;
   cursor:pointer;
-
 }
 
 li:hover{
