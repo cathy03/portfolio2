@@ -66,10 +66,7 @@ function updateTitle(event, index) {
 }
 
 
-$carousel.on('settle.flickity', updateIndex);
-$carousel.on('select.flickity', updateSlide);
-$carousel.on('scroll.flickity', imgParallax);
-$carousel.on('change.flickity', updateTitle);
+
 
 
 $('.main-project-title').click(function () {
@@ -86,6 +83,10 @@ $(window).ready(function () {
   updateSlide();
   imgParallax();
 
+  $carousel.on('settle.flickity', updateIndex);
+  $carousel.on('select.flickity', updateSlide);
+  $carousel.on('scroll.flickity', imgParallax);
+  $carousel.on('change.flickity', updateTitle);
 });
 
 // Mousewheel interaction
