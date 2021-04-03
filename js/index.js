@@ -20,7 +20,6 @@ function updateIndex(event, index) {
   $('.main-project-index').text('0' + cellNumber);
   //$('.main-project-index').text( '0' + flkty.slides.length );
 }
-updateIndex();
 
 // update Slider Animation
 function updateSlide(event, index) {
@@ -33,7 +32,6 @@ function updateSlide(event, index) {
     clearInterval(slideTime);
   }, 100)
 }
-updateSlide();
 
 // Parallax Animation
 function imgParallax(event, progress) {
@@ -69,7 +67,6 @@ function updateTitle(event, index) {
   }, 1000)
 }
 
-updateTitle();
 
 $carousel.on('settle.flickity', updateIndex);
 $carousel.on('select.flickity', updateSlide);
@@ -83,9 +80,13 @@ $('.main-project-title').click(function () {
 });
 
 
-$(document).ready(function () {
+$(window).ready(function () {
   $('.main-carousel').css('opacity', '1');
   $('.main-carousel').css('transition', 'all .6s ease');
+  updateIndex();
+  updateTitle();
+  updateSlide();
+
 });
 
 // Mousewheel interaction
