@@ -8,7 +8,6 @@ var $carousel = $('.main-carousel').flickity({
   hash: true,
   autoPlay: 5000,
   pauseAutoPlayOnHover: false,
-  lazyLoad: true
 });
 
 var flkty = $carousel.data('flickity');
