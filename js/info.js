@@ -1,5 +1,12 @@
 var projectInfo = [
   {
+    title: 'Kakao i Cloud :<br> Visual Components & Service Design',
+    subtitle: 'UI Design<br>Interaction Design',
+    date: '2020',
+    titleImg: 'img/content_02/main.png',
+    linkPage: 'content_cloud.html'
+  },
+  {
     title: 'Product Design :<br> Hey Kakao',
     subtitle: 'UI / UX Design<br>Interaction Design',
     date: '2020',
