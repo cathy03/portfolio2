@@ -25,6 +25,7 @@ function goMenu(){
 
 // open Detail Animation
 function goDetail(){
+  $('main').addClass('absolute-active');
   $('.revealer').css('opacity','1');
   $('.revealer__layer').addClass('revealer--animate--totop');
   //$('.revealer--animate--totop:nth-child(3)').css('background-color', contentsBg[flkty.selectedIndex]);

@@ -3,7 +3,7 @@ var projectInfo = [
     title: 'XDRACO :<br> Blockchain Service for MIR4',
     subtitle: 'UI / UX Design<br>Interaction Design',
     date: '2021',
-    titleImg: 'img/content_02/main.png',
+    titleImg: '',
     linkPage: 'content_xdraco.html'
   },
   {
@@ -41,7 +41,19 @@ var projectInfo = [
     titleImg: 'https://cathy03.github.io/portfolio/images/pa/pa_main_bg.jpg',
     linkPage: 'https://cathy03.github.io/portfolio/03_project_anne.html'
   },
-
+  {
+    title: 'Syrup Style : Fashion Hot Place Shopping App',
+    subtitle: 'UI Design<br>Interaction Design',
+    date: '2016',
+    titleImg: '',
+    linkPage: 'https://cathy03.github.io/portfolio/02_syrupstyle.html'
+  },  {
+    title: 'Syrup Store : O2O Marketing Solution Platform',
+    subtitle: 'UI Design<br>Interaction Design',
+    date: '2015',
+    titleImg: '',
+    linkPage: 'https://cathy03.github.io/portfolio/06_syrupstore.html'
+  },
 
 
 ]

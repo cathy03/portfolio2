@@ -10,22 +10,14 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon">
   <link rel="icon" href="img/favi.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>YJ : Portfolio</title>
-  <style type="text/css">
-    @font-face {
-      font-family: GothamPro;
-      font-style: normal;
-      src: url("font/GothamPro-Bold.eot");
-      src: url("font/GothamPro-Bold.woff") format('woff'),
-        url("font/GothamPro-Bold.ttf") format('truetype');
-      src: local(※), url("font/GothamPro-Bold.woff") format('woff');
-      font-weight: 600;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="header-container">
+  <!-- <div class="header-container">
     <ul class="header">
       <li class="header-logo"></li>
       <li class="header-group header-title">YEOJOON</li>
@@ -33,40 +25,302 @@
       <li class="header-group header-about">ABOUT</li>
       <li class="header-group header-contact">CONTACT</li>
     </ul>
-  </div>
-  <div class="main-container">
-    <div class="icon-group">
-      <a href="https://www.linkedin.com/in/yuhjoon-yoon-0610b689/" target="_blank"><img class="icon"
-          src="img/ic_linkedin.png"></a>
+  </div> -->
+  <main data-scroll-container>
+    <div class="lnb-menu-wrap">
+      <div class="container sticky">
+        <div class="lnb-menu col-2">
+          <ul>
+            <li class="header-group header-title" style="padding-top:0"><span>YEOJOON</span></li>
+            <li class="header-group header-work" style="padding-top:0"><span>EXPERIENCE</span></li>
+            <li class="header-group header-about" style="padding-top:0; text-align: left;"><span>ABOUT</span></li>
+            <li class="header-group header-contact" style="padding-top:0; text-align: left;"><span>CONTACT</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section data-scroll-section>
+      <div
+        data-scroll
+        data-scroll-speed="-2"
+        class="container"
+        style="background: white"
+      >
+        <div class="col-2"></div>
+        <div class="col-10 layout-1">
+          <span>YOON<br/>Design Portfolio</span>
+          <h1>BETWEEN USERS AND SERVICE PRODUCT DESIGNER</h1>
+        </div>
+      </div>
+    </section>
+    <section id="sticky-section-1" data-scroll-section>
+      <div class="bg-wrap" style="background: black">
+        <div
+          data-scroll
+          data-scroll-sticky
+          data-scroll-target="#sticky-section-1"
+          class="bg-container"
+        >
+          <img src="img/content_xdraco/xdraco.png" alt="" />
+        </div>
+      </div>
+      <div data-scroll data-scroll-speed="-1" class="container">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <div class="project-card wemix-play">
+            <div class="title-section">
+              <div class="col-4">
+                <h2>WEMIX PLAY</h2>
+                <p>a blockchain gaming platform servicing various games to the global gaming community.</p>
+                <span class="label">UI DESIGN</span>
+                <span class="label">INTERACTION</span>
+                <span class="label">UX GUIDELINES</span>
+              </div>
+            </div>
+            <div class="assets-wrap">
+              <img src="img/wemixplay.png" alt="" />
+            </div>
+          </div>
+          <div class="col-10 layout-1 xdraco" style="min-height: 50vh; color: white; cursor:pointer;
+          ">
+            <span>WEMADE</span>
+            <h1>XDRACO : Blockchain Service for MIR4</h1>
+            <div class="col-4">
+              <p>Begin your experience by Staking, Exchanging, and Trading Complete your experience by DRACO</p>
+              <span class="label">UI DESIGN</span>
+              <span class="label">INTERACTION</span>
+              <span class="label">UX GUIDELINES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sticky-section-2" data-scroll-section>
+      <div class="bg-wrap">
+        <div
+          data-scroll
+          data-scroll-sticky
+          data-scroll-target="#sticky-section-2"
+          class="bg-container"
+        >
+          <img src="img/kakaoicloud.jpg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-2"></div>
+        <div class="col-10 section-top-margin">
+          <div id="sticky-section-2-1" class="project-container">
+            <div class="col-4 project-groups">
+              <div class="project-card kakaowork">
+                <div class="title-section">
+                  <div>
+                    <h2>Kakaowork 3.0</h2>
+                    <p>Blockchain game for mir4 service design</p>
+                    <span class="label">UI Wireframe</span>
+                    <span class="label">UI DESIGN</span>
+                    <span class="label">INTERACTION</span>
+                  </div>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/Kakaowork_Symbol_310-1.gif" alt="" />
+                </div>
+              </div>
+              <div class="project-card hey-kakao" style="cursor:pointer;">
+                <div class="title-section">
+                  <h2>Hey Kakao</h2>
+                  <p>We are a team of digital designers, technologists, marketing and brand experts.</p>
+                  <span class="label">UI Wireframe</span>
+                  <span class="label">UI DESIGN</span>
+                  <span class="label">INTERACTION</span>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/heykakao.png" alt="" />
+                </div>
+              </div>
+              <div class="project-card smart-display">
+                <div class="title-section">
+                  <h2>Smart Display</h2>
+                  <p>We are a team of digital designers, technologists, marketing and brand experts.</p>
+                  <span class="label">UI Wireframe</span>
+                  <span class="label">UI DESIGN</span>
+                  <span class="label">INTERACTION</span>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/smartdisplay.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              data-scroll
+              data-scroll-sticky
+              data-scroll-target="#sticky-section-2-1"
+              class="col-6 project-groups"
+            >
+            <div class="project-card kakaoi" style="cursor:pointer;">
+              <div class="title-section">
+                <h2>Kakao i Service</h2>
+                <p>We are a team of digital designers, technologists, marketing and brand experts.</p>
+                <span class="label">UI Wireframe</span>
+                <span class="label">UI DESIGN</span>
+                <span class="label">INTERACTION</span>
+              </div>
+              <div class="assets-wrap">
+                <img src="img/kakaoi.jpg" alt="" />
+              </div>
+            </div>
 
-      <img class="icon" src="img/ic_instagram.png">
-    </div>
-    <div class="main-project">
-      <div class="main-project-slide"></div>
-      <div class="main-project-date"><span></span></div>
-      <div class="main-project-subtitle"><span></span></div>
-      <div class="main-project-title"><span></span></div>
-      <div class="main-project-index"></div>
-    </div>
-
-    <div class="main-carousel">
-      <div class="carousel-cell"><img src="img/content_02/main.jpg"></div>
-      <div class="carousel-cell"><img src="img/heykakao_main_bg.jpg"></div>
-      <div class="carousel-cell"><img src="img/content_01/main.png"></div>
-      <div class="carousel-cell"><img src="img/sc_main_bg.jpeg"></div>
-      <div class="carousel-cell"><img src="img/ann_main_bg.jpg"></div>
-    </div>
-  </div>
+            </div>
+          </div>
+          <div class="col-10 layout-1 kakao-cloud" style="min-height: 50vh; color: white; cursor:pointer;">
+            <span>KAKAO ENTERPRISE</span>
+            <h1>Kakao i Cloud : Design System & Guidelines</h1>
+            <div class="col-4">
+              <p>Begin your experience by Staking, Exchanging, and Trading Complete your experience by DRACO</p>
+              <span class="label">UI DESIGN</span>
+              <span class="label">INTERACTION</span>
+              <span class="label">UX GUIDELINES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sticky-section-3" data-scroll-section>
+      <div class="bg-wrap">
+        <div
+          data-scroll
+          data-scroll-sticky
+          data-scroll-target="#sticky-section-3"
+          class="bg-container"
+        >
+          <img src="img/sc_main_bg.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-2"></div>
+        <div class="col-10 section-top-margin">
+          <div id="sticky-section-3-1" class="project-container">
+            <div
+              data-scroll
+              data-scroll-sticky
+              data-scroll-target="#sticky-section-3-1"
+              class="col-6 project-groups"
+            >
+              <div class="project-card project-anne" style="cursor:pointer;">
+                <div class="title-section">
+                  <h2>Project Anne</h2>
+                  <p>Begin your experience by Staking, Exchanging, and Trading Complete your experience by DRACO</p>
+                  <span class="label">APP</span>
+                  <span class="label">UI DESIGN</span>
+                  <span class="label">PROTOTYPE</span>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/projectann.jpg" alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 project-groups">
+              <div class="project-card syrup-style" style="cursor:pointer;">
+                <div class="title-section">
+                  <h2>Syrup Style</h2>
+                  <p>Begin your experience by Staking, Exchanging, and Trading Complete your experience by DRACO</p>
+                  <span class="label">APP</span>
+                  <span class="label">UI DESIGN</span>
+                  <span class="label">PROTOTYPE</span>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/syrupstyle.png" alt="" />                    
+                </div>
+              </div>
+              <div class="project-card syrup-store" style="cursor:pointer;">
+                <div class="title-section">
+                  <h2>Syrup Store</h2>
+                  <p>Begin your experience by Staking, Exchanging, and Trading Complete your experience by DRACO</p>
+                  <span class="label">APP</span>
+                  <span class="label">UI DESIGN</span>
+                  <span class="label">PROTOTYPE</span>
+                </div>
+                <div class="assets-wrap">
+                  <img src="img/syrupstyle.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 layout-1 shoescan" style="min-height: 50vh; color: white; cursor:pointer;">
+            <span>SK PLANET</span>
+            <h1>Shoescan : <br/>AI Driven Visual Search Commerce App</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer data-scroll-section>
+      <div class="container">
+        <div class="col-2"></div>
+        <div class="col-10 layout-1" style="margin-bottom:120px;">
+          <div style="width:64px; height:64px; margin-bottom:2em;"><img src="https://cathy03.github.io/portfolio/images/favi.ico" alt=""></div>
+          <h2 style="margin-bottom:2em;">Yoon yeojoon<br/>yoonyeojooncathy@gmail.com</h2>
+          <p>Copyright 2022 ⓒ YOONYEOJOON All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
   <div class="revealer">
     <div class="revealer__layer"></div>
     <div class="revealer__layer"></div>
     <div class="revealer__layer"></div>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/flickity.pkgd.min.js"></script>
-  <script src="js/jquery.smoothwheel.js"></script>
   <script src="js/info.js"></script>
-  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    const scroller = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        tablet: { smooth: true },
+        smartphone: { smooth: true }
+    });
+    scroller.on('call',(value, way, obj) => {
+        if(value === 'testCall'){
+            if(way === 'enter'){
+              $('.header-container').css('top', '0');
+            }else{
+              $('.header-container').css('top', '-50px');
+            }
+        }
+    });
+
+    $('.xdraco').click(function () {
+      linkPageIndex = 3;
+      goDetail();
+    });
+    $('.kakao-cloud').click(function () {
+      linkPageIndex = 4;
+      goDetail();
+    });
+    $('.hey-kakao').click(function () {
+      linkPageIndex = 5;
+      goDetail();
+    });
+    $('.kakaoi').click(function () {
+      linkPageIndex = 6;
+      goDetail();
+    });
+    $('.shoescan').click(function () {
+      linkPageIndex = 7;
+      goDetail();
+    });
+    $('.project-anne').click(function () {
+      linkPageIndex = 8;
+      goDetail();
+    });
+    $('.syrup-style').click(function () {
+      linkPageIndex = 9;
+      goDetail();
+    });
+    $('.syrup-store').click(function () {
+      linkPageIndex = 10;
+      goDetail();
+    });
+  </script>
   <script src="js/header.js"></script>
 </body>
 
