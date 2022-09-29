@@ -74,21 +74,21 @@ $('.main-project-title').click(function () {
   goDetail();
 });
 
-setTimeout(({
-  $(window).ready(function () {
-    $('.main-carousel').css('opacity', '1');
-    $('.main-carousel').css('transition', 'all .6s ease');
-    updateIndex();
-    updateTitle();
-    updateSlide();
-    imgParallax();
-  
-    $carousel.on('settle.flickity', updateIndex);
-    $carousel.on('select.flickity', updateSlide);
-    $carousel.on('scroll.flickity', imgParallax);
-    $carousel.on('change.flickity', updateTitle);
-  });
-}),1000);
+function indexLoad() {
+  $('.main-carousel').css('opacity', '1');
+  $('.main-carousel').css('transition', 'all .6s ease');
+  updateIndex();
+  updateTitle();
+  updateSlide();
+  imgParallax();
+
+  $carousel.on('settle.flickity', updateIndex);
+  $carousel.on('select.flickity', updateSlide);
+  $carousel.on('scroll.flickity', imgParallax);
+  $carousel.on('change.flickity', updateTitle);
+});
+
+setTimeout(indexLoad(),1000);
 
 
 // Mousewheel interaction
