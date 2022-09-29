@@ -74,7 +74,7 @@ $('.main-project-title').click(function () {
   goDetail();
 });
 
-function indexLoad() {
+$(window).onload(function () {
   $('.main-carousel').css('opacity', '1');
   $('.main-carousel').css('transition', 'all .6s ease');
   updateIndex();
@@ -87,9 +87,6 @@ function indexLoad() {
   $carousel.on('scroll.flickity', imgParallax);
   $carousel.on('change.flickity', updateTitle);
 });
-
-setTimeout(indexLoad(),1000);
-
 
 // Mousewheel interaction
 $('.main-carousel').mousewheel(function (e) {
