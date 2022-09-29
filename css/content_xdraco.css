@@ -1,0 +1,220 @@
+body{
+  background-color: #fff;
+  color: #222222;
+}
+
+main{
+  font-size: 8px;
+  position: relative;
+  font-family: 'Poppins', 'inter',sans-serif;
+ 
+}
+.absolute-active{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  overflow: auto;
+}
+
+.content-card.collectible-card{
+  background:#00021A;
+}
+.collectible-card img{
+  width: 360px;
+  height: auto;
+}
+.card-group{
+  max-width: 1440px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display:flex;
+  gap: 60px;
+}
+.card-group li{
+  width: 100%;
+}
+.card-group li span{
+  display:inline-block;
+  font-size: 2em;
+  margin-top: 1em;
+  color:white;
+
+}
+.content-scroll-bg{
+  max-width: 1440px;
+  height: auto;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.content-scroll{
+  max-width: 1440px;
+  margin: 100px auto 80px;
+  padding: 0 12%;
+}
+.content-title{
+padding: 40px;
+box-sizing: border-box;
+}
+.content-title p{
+padding-top:8px;
+}
+.content-card{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 40vw;
+color:white;
+position:relative;
+}
+.content-card.logo{
+background:#0F004D;
+}
+.content-card.flow{
+background:#5438FF;
+}
+.content-card p{
+position:absolute;
+top:40px;
+left:40px;
+}
+.content-card img{
+object-fit: contain;
+}
+
+section{
+overflow: hidden;
+}
+
+h1{
+font-size: 20em;
+font-weight: 700;
+line-height: 1em;
+letter-spacing: -0.05em;
+}
+h2{
+  font-size: 12em;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.025em;
+}
+
+h3{
+font-size: 5em;
+font-weight: 700;
+line-height: 1.2em;
+letter-spacing: -0.025em;
+}
+p{
+font-size: 2.5em;
+font-weight: 400;
+line-height: 1.4em;
+}
+p strong{
+font-weight: 700;
+}
+span{
+  font-size: 1.7em;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+
+.contents{
+display: flex;
+}
+.col-4{
+  width: 40%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.col-6{
+  width:60%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.col-5{
+  width:50%;
+}
+.col-10{
+width:100%;
+padding: 80px 40px 120px;
+box-sizing: border-box;
+}  
+.title-section{
+width:100%;
+min-height: 32vw;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-sizing: border-box;
+position: relative;
+}
+.title-section p{
+position: absolute;
+bottom: 5vw;
+width: 100%;
+text-align: center;
+}
+.project-info ul{
+padding-bottom: 24px;
+}
+
+.bg-container{
+width:100%;
+height: 32vw;
+background: black;
+overflow:hidden;
+}
+img{
+width: 100%;
+height: auto;
+vertical-align: bottom;
+}
+.keyshot{
+padding: 80px 0;
+}
+.keyshot img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.project-intro{
+padding: 80px 0;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.row{
+display: flex;
+}
+
+.schedule{
+width: 100vw;
+height: auto;
+margin-left: -360px;
+}
+.schedule img{
+width:auto;
+height: 800px;
+}
+
+.dsp-card img{
+width: auto;
+height: 640px;
+padding: 80px 0;
+}
+.nft-cards{
+margin: 80px 0;
+}
+.nft-card{
+margin-bottom:24px;
+}
+.nft-card img{
+width: auto;
+height: 312px;
+}

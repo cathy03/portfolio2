@@ -18,6 +18,7 @@ var contentsBg = [
 
 // open Header Animation
 function goMenu(){
+  $('main').addClass('absolute-active');
   $('.revealer').css('opacity','1');
   $('.revealer__layer').addClass('revealer--animate--tobottom');
 }

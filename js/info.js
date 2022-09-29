@@ -1,5 +1,12 @@
 var projectInfo = [
   {
+    title: 'XDRACO :<br> Blockchain Service for MIR4',
+    subtitle: 'UI / UX Design<br>Interaction Design',
+    date: '2021',
+    titleImg: 'img/content_02/main.png',
+    linkPage: 'content_xdraco.html'
+  },
+  {
     title: 'Kakao i Cloud :<br> Visual Components & Service Design',
     subtitle: 'UI Design<br>Interaction Design',
     date: '2020',
