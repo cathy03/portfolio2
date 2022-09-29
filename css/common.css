@@ -89,7 +89,7 @@ body{
 
 .header-logo{
   grid-column: 1;
-  background-color: #ff8864;
+  /* background-color: #ff8864; */
   width: 24px;
   height: 24px;
   border-radius: 12px;
