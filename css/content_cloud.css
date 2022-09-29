@@ -106,6 +106,7 @@ main{
 }
 .sticky{
   top: 100px;
+  height: 360px;
   position: sticky;
 }
 
