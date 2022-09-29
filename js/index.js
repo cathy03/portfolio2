@@ -74,7 +74,8 @@ $('.main-project-title').click(function () {
   goDetail();
 });
 
-window.onload(function () {
+
+$(document).ready(function () {
   $('.main-carousel').css('opacity', '1');
   $('.main-carousel').css('transition', 'all .6s ease');
   updateIndex();
