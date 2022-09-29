@@ -3,19 +3,31 @@ body{
   color: #222222;
 }
 
+main{
+  font-size: 8px;
+  position: relative;
+  font-family: 'Poppins', 'inter',sans-serif;
+ 
+}
+
 .content-container{
   padding-top: 100px;
+}
+
+.absolute-active{
   position: absolute;
   top:0;
   left: 0;
-  right:0;
+  right: 0;
   bottom:0;
+  overflow: auto;
 }
+
 .title-section{
   width: 824px;
   padding: 0 40px;
-  margin: 20vh auto;
-  margin-bottom: 30vh;
+  margin: 10vw auto;
+  margin-bottom: 10vw;
   position: relative;
 }
 .title-info{
@@ -37,8 +49,7 @@ body{
 
 .content-title{
   font-size: 80px;
-  font-family: GothamPro;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -2px;
   line-height: 1.1;
 }
@@ -138,7 +149,6 @@ body{
 
 h2{
   font-size: 48px;
-  font-family: GothamPro;
   font-weight: 800;
   letter-spacing: -1.5px;
   line-height: 56px;
@@ -147,7 +157,6 @@ h2{
 
 h3{
 font-size: 24px;
-font-family: GothamPro;
 letter-spacing: -1px;
 font-weight: 600;
 line-height: 32px;

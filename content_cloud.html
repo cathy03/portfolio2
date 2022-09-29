@@ -9,18 +9,10 @@
   <link rel="stylesheet" href="css/content_cloud.css">
   <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon">
   <link rel="icon" href="img/favi.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>YJ : Portfolio</title>
-  <style type="text/css">
-    @font-face {
-      font-family: GothamPro;
-      font-style: normal;
-      src: url("font/GothamPro-Bold.eot");
-      src: url("font/GothamPro-Bold.woff") format('woff'),
-        url("font/GothamPro-Bold.ttf") format('truetype');
-      src: local(※), url("font/GothamPro-Bold.woff") format('woff');
-      font-weight: 600;
-    }
-  </style>
 </head>
 
 <body>
@@ -33,22 +25,22 @@
       <li class="header-group header-contact">CONTACT</li>
     </ul>
   </div>
-  <div class="content-container">
+  <main data-scroll-container class="content-container">
     <div class="title-section">
       <h1 class="content-title">Kakao i Cloud : Visual Components & Service Design </h1>
-      <div class="title-info">
+      <div data-scroll data-scroll-call="testCall" data-scroll-repeat="true" class="title-info">
         <div class="title-info-client">Kakao Enterprise</div>
         <div class="title-info-desc">UI Design Interaction<br>-<br>2020</div>
       </div>
     </div>
-    <div class="title-img"><img src="img/content_02/main.jpg"></div>
-    <div class="content-section proposal">
+    <div data-scroll data-scroll-speed="1" class="title-img"><img src="img/content_02/main.jpg"></div>
+    <div class="content-section proposal" style="padding-bottom:40px;">
       <div class="img-container "><img src="img/content_02/proposal_01.png"></div>
       <h2>디자인 시안 작업을 통한<br>
         서비스에 대한 이해 및<br>
         UX 패턴 파악</h2>
     </div>
-    <div class="proposal_2 img-container "><img src="img/content_02/proposal_02.png"></div>
+    <div data-scroll data-scroll-speed="1" class="proposal_2 img-container "><img src="img/content_02/proposal_02.png"></div>
 
     <div class="content-section">
       <div class="content-items">
@@ -78,15 +70,16 @@
     </div>
     <div class="wrapper">
       <div class="content-section-list">
-        <div class="content-items content-2column-items">
+        <div id="sticky-section-1" class="content-items content-2column-items">
           <div class="content-2column-item">
             <img src="img/content_02/dashboard_01.png">
             <img src="img/content_02/dashboard_02.png">
             <img src="img/content_02/dashboard_03.png">
-
           </div>
           <div class="content-2column-item text-group">
-            <div class="sticky">
+            <div data-scroll
+            data-scroll-sticky
+            data-scroll-target="#sticky-section-1" class="sticky">
               <h3>Dashboard</h3>
               <span>클라우드에서 사용하는 제품의 사용량, 비용 등 정보를 파악할 수 있는 제품이다. 브랜딩이 확정되기 전에 파란색을 메인 컬러로 잡고 진행한 시안으로, 비용은 권한 이슈로 빠지게
                 되면서 전체적으로 디자인이 변경되었다.</span>
@@ -94,9 +87,11 @@
 
           </div>
         </div>
-        <div class="content-items content-2column-items">
+        <div id="sticky-section-2" class="content-items content-2column-items">
           <div class="content-2column-item text-group">
-            <div class="sticky">
+            <div data-scroll
+            data-scroll-sticky
+            data-scroll-target="#sticky-section-2" class="sticky">
               <h3>Virtual Machine</h3>
               <span>브랜딩이 결정되고, 카카오 색상이 적용되면서 컴퍼넌트 및 전반적인 제품 디자인을 수정 반영하게 되었다.</span>
             </div>
@@ -107,13 +102,15 @@
             <img src="img/content_02/vm_02.png">
           </div>
         </div>
-        <div class="content-items content-2column-items">
+        <div id="sticky-section-3" class="content-items content-2column-items">
           <div class="content-2column-item">
             <img src="img/content_02/billing_01.png">
             <img src="img/content_02/billing_02.png">
           </div>
           <div class="content-2column-item text-group">
-            <div class="sticky">
+            <div data-scroll
+            data-scroll-sticky
+            data-scroll-target="#sticky-section-3" class="sticky">
               <h3>Billing</h3>
               <span>사용량에 따른 비용을 실시간 확인 및 청구서를 볼 수 있는 제품이다. 특별한 기능보다 각 항목을 한눈에 파악할 수 있도록 디자인하는데 집중하였다.</span>
             </div>
@@ -124,7 +121,7 @@
       <div class="img-container" style="margin:0; padding:0;"><img src="img/content_02/footer.jpg"></div>
 
     </div>
-  </div>
+  </main>
 
   <div class="revealer">
     <div class="revealer__layer"></div>
@@ -132,95 +129,23 @@
     <div class="revealer__layer"></div>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.easeScroll.js"></script>
-  <script src="js/lottie.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
   <script type="text/javascript">
-
-    var cardButton = $(".card-layout .device li");
-    var landButton = $(".land-layout .device li");
-    var portButton = $(".port-layout .device li");
-
-    cardButton.on("click", function () {
-      $(".card-layout .view-template").css("bottom", 18);
-      $(".card-layout .device li").removeClass("active");
-      $(this).addClass("active");
-      var newWidth = $(this).attr("device-width");
-      var newHeight = $(this).attr("device-height");
-      $(".card-layout .device-screen").css("width", newWidth);
-      $(".card-layout .device-screen").css("height", newHeight);
+    const scroller = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        tablet: { smooth: true },
+        smartphone: { smooth: true }
     });
-
-    $(".card-layout .device li:nth-child(3)").on("click", function () {
-      $(".card-layout .view-template").css("bottom", 80);
+    scroller.on('call',(value, way, obj) => {
+        if(value === 'testCall'){
+            if(way === 'enter'){
+              $('.header-container').css('top', '0');
+            }else{
+              $('.header-container').css('top', '-50px');
+            }
+        }
     });
-
-    landButton.on("click", function () {
-      $(".land-layout .view-template").css("height", 160);
-      $(".land-layout .device li").removeClass("active");
-      $(this).addClass("active");
-      var newWidth = $(this).attr("device-width");
-      var newHeight = $(this).attr("device-height");
-      $(".land-layout .device-screen").css("width", newWidth);
-      $(".land-layout .device-screen").css("height", newHeight);
-    });
-
-    $(".land-layout .device li:nth-child(2)").on("click", function () {
-      $(".land-layout .view-template").css("height", 254);
-    });
-
-    portButton.on("click", function () {
-      $(".port-layout .view-template").css("width", 158);
-      $(".port-layout .device li").removeClass("active");
-      $(this).addClass("active");
-      var newWidth = $(this).attr("device-width");
-      var newHeight = $(this).attr("device-height");
-      $(".port-layout .device-screen").css("width", newWidth);
-      $(".port-layout .device-screen").css("height", newHeight);
-    });
-
-    $(".port-layout .device li:nth-child(2)").on("click", function () {
-      $(".port-layout .view-template").css("width", 190);
-    });
-
-    var layoutButton = $(".sample-tab .device li");
-    layoutButton.on("click", function () {
-      $(".sample-tab li").removeClass("active");
-      $(this).addClass("active");
-      var newImgUrl = $(this).attr("imgurl");
-      $("#layout_img").attr("src", newImgUrl);
-    });
-
-    $("html").easeScroll({
-      frameRate: 60,
-      animationTime: 1000,
-      stepSize: 120,
-      pulseAlgorithm: 1,
-      pulseScale: 8,
-      pulseNormalize: 1,
-      accelerationDelta: 20,
-      accelerationMax: 1,
-      keyboardSupport: true,
-      arrowScroll: 50,
-      touchpadSupport: true,
-      fixedBackground: true
-    });
-
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('lottie'), // Required
-      path: 'json/line_data.json', // Required
-      renderer: 'svg',
-      loop: true, // Optional
-      autoplay: true, // Optional
-    });
-
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('lottie-dot-agent'), // Required
-      path: 'json/data.json', // Required
-      renderer: 'svg',
-      loop: true, // Optional
-      autoplay: true, // Optional
-    });
-
 
     function listAnimation() {
       $('.content').each(function (i) {

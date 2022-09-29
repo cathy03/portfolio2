@@ -176,11 +176,21 @@ color:#222;
   color: white;
   min-height: 640px;
 }
+.project-card.syrup-style .label{
+  background: rgba(112, 0, 0, 0.2);
+  color: white;
+  mix-blend-mode: normal;
+}
 
 .project-card.syrup-store{
   background: #ff9d24;
   color: white;
   min-height: 640px;
+}
+.project-card.syrup-store .label{
+  background: rgba(112, 0, 0, 0.2);
+  color: white;
+  mix-blend-mode: normal;
 }
 
 img{
