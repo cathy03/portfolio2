@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <section data-scroll-section>
+    <section>
       <div
         data-scroll
         data-scroll-speed="-2"
@@ -48,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section id="sticky-section-1" data-scroll-section>
+    <section id="sticky-section-1">
       <div class="bg-wrap" style="background: black">
         <div
           data-scroll
@@ -90,7 +90,7 @@
         </div>
       </div>
     </section>
-    <section id="sticky-section-2" data-scroll-section>
+    <section id="sticky-section-2">
       <div class="bg-wrap">
         <div
           data-scroll
@@ -179,7 +179,7 @@
         </div>
       </div>
     </section>
-    <section id="sticky-section-3" data-scroll-section>
+    <section id="sticky-section-3">
       <div class="bg-wrap">
         <div
           data-scroll
@@ -247,7 +247,7 @@
         </div>
       </div>
     </section>
-    <footer data-scroll-section>
+    <footer>
       <div class="container">
         <div class="col-2"></div>
         <div class="col-10 layout-1" style="margin-bottom:120px;">
@@ -270,7 +270,8 @@
     const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        tablet: { smooth: true },
+        repaet: true,
+        tablet: { smooth: true, repaet: true },
         smartphone: { smooth: true }
     });
     scroller.on('call',(value, way, obj) => {
