@@ -269,8 +269,7 @@
     const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        repaet: true,
-        tablet: { smooth: true, repaet: true },
+        tablet: { smooth: true },
         smartphone: { smooth: true }
     });
     scroller.on('call',(value, way, obj) => {
